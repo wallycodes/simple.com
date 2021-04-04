@@ -1,0 +1,402 @@
+
+html{
+  scroll-behavior: smooth;
+}
+/* FADE IN transition */
+
+.hero1pic{
+            animation: fadeInAnimation ease 1.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+/* NAVBAR HOVER ANIMATION */
+.hover{
+  display: inline-block;
+  position: relative;
+}
+
+.hover::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+#title {
+  color: #fff;
+  text-align: left;
+  background-color: #5D5FEF;
+  border-radius: 0 0 0 400px;
+}
+
+.blueBackground {
+  font-family: 'poppins', sans-serif;
+  padding: 7%;
+}
+
+.nav-item {
+  margin: 20px;
+}
+
+.navbar-toggler {
+  background-color: #fff !important;
+}
+
+.topHeroSection{
+
+}
+
+.heroQuote {
+  color: #fff;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: auto;
+  font-size: 1.5vmin;
+  font-size: 4.5vmax;
+  text-align: left;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1250px) {
+  .heroQuote {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  #title {
+    text-align: center;
+    justify-content: center;
+  }
+  
+}
+
+/* @media only screen and (min-width: 1201px) {
+  .heroQuote {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .heroQuote {
+    font-size: 9rem;
+  }
+} */
+.bothButtons {
+  padding: 20px 0 0px;
+}
+
+.downloadAppleText {
+  float: right;
+  line-height: 1;
+  font-size: 1rem;
+  padding: 5px 10px 0 0;
+}
+
+.appleStoreButton {
+  width: 30%;
+}
+
+.googlePlayButton {
+  margin: 0px 0px 0 10px;
+  width: 30%;
+}
+
+.heroRow {
+  align-content: flex-end;
+}
+
+.hero1pic {
+  max-width: 100%;
+  padding-top: 40px;
+}
+
+.nav-font {
+  font-family: 'poppins', sans-serif;
+  color: #fff !important;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+h1 {
+  font-family: 'poppins', sans-serif;
+}
+
+.about-us-title, .featuresTitle, .meetingAllTitle {
+  font-weight: 800;
+  font-size: 2.7rem;
+  color: #3D3D3D;
+}
+
+.aboutUs {
+  background-color: #F6F6F6;
+  padding: 5%;
+  margin: auto;
+  width: 100%;
+}
+
+.aboutUsP {
+  font-family: 'poppins', sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  color: #979797;
+}
+
+.unlimitedAccessP, .instantCartP, .friendlyInterfaceP, .customerSupportP {
+  padding-right: 50px;
+  padding-left: 100px;
+  color: #979797;
+}
+
+.unlimitedAccessTitle, .instantCartTitle, .friendlyInterfaceTitle, .customerSupportTitle{
+  padding-left: 100px;
+  font-weight: 700;
+}
+
+.unlimitedAccess, .instantCart, .friendlyInterface, .customerSupport {
+  padding-top: 50px;
+}
+
+/* FEATURES */
+.features {
+  background-color: #ffffff;
+  font-family: 'poppins', sans-serif;
+  padding: 5%;
+  margin: auto;
+}
+
+.featuresP{
+  padding: 10px;
+  text-align: center;
+}
+
+
+.freeDownloadTitle, .backedUpTitle, .shareWithFamilyTitle, .locationTitle, .meetingAllTitle2, .trustedByTitle{
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #3D3D3D;
+}
+
+/*PARAGRAPHS */
+.freeDownloadP, .featuresP, .backedUpP, .shareWithFamilyP, .locationP, .aboutUsP,
+.meetingAllP, .trustedByP {
+  color: #979797;
+  line-height: 35px;
+
+}
+
+.featuresTitle, .about-us-title, .meetingAllTitle, .trustedByTitle{
+  font-size: .2vmin;
+  font-size: 3.5vmax;
+
+}
+
+.freeDownloadIcon, .backedUpIcon, .shareWithFamilyIcon, .locationIcon {
+  padding: 75px 0 75px 0;
+  width: 90px;
+}
+
+.iphoneFeaturesPic2 {
+  margin: auto;
+  display: block;
+
+}
+
+
+
+@media only screen and (min-width: 1832px){
+  .iphoneFeaturesPic{
+    padding:0 10% 0 !important;
+  }
+}
+
+@media only screen and (min-width: 2257px){
+  .iphoneFeaturesPic{
+    padding:0 28% 0 !important;
+  }
+}
+
+
+.shareWithFamilyColumn{
+padding-left: 0 !important;
+}
+.location{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+/* @media only screen and (min-width: 2500px) {
+  .heroQuote {
+    font-size: 9rem;
+  } */
+.meetingAll{
+  background-color: #F6F6F6;
+  padding: 5%;
+  margin: auto;
+}
+
+.meetingAllTitle{
+  padding: 0 0 100px;
+  font-size: 1.5vmin;
+  font-size: 4.5vmax;
+}
+.meetingStar{
+  display: block;
+
+  margin: 0 auto;
+}
+
+.face1{
+
+  margin: 20px auto 0;
+
+}
+
+.jacobName{
+  padding-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.jacobName2{
+ color: #979797;
+}
+
+
+.faceGroup{
+  margin-top: 50px;
+  width: 100%;
+}
+
+.unlimitedAccessP, .instantCartP, .friendlyInterfaceP, .customerSupportP, .aboutUsP
+,.featuresP, .freeDownloadP, .shareWithFamilyP, .backedUpP, .locationP, .meetingAllP
+,.trustedByP{
+  font-size: 1.2rem !important;
+}
+
+
+@media only screen and (max-width: 1024px){
+  .iphoneFeaturesPic{
+    padding-top: 150px;
+  }
+
+.heroQuote{
+  padding-top: 50px;
+}
+
+.hero1pic{
+  padding-top: 100px;
+}
+
+  .meetingAllTitle, .meetingAllTitle2, .meetingAllP{
+    text-align: center;
+  }
+
+  .meetingAllP{
+    padding-right: 0;
+  }
+
+  .jacobName2, .jacobName{
+    position: relative;
+    text-align: center;
+}
+
+
+}
+
+.trustedBy{
+  background-color: #fff;
+}
+
+.trustedByTitle{
+  padding: 5%;
+}
+/*
+.trustedByLogo{
+  align-items: center;
+}
+*/
+
+.trustedByP{
+  padding: 0px 200px 100px;
+}
+
+.footerGrey{
+background-color: #F6F6F6;
+  padding: 5rem;
+}
+
+.link {
+  text-decoration: none !important;
+  color: #979797 !important;
+  background-color: none !important;
+}
+
+.footerTitles{
+  color: #5F5DE7;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerGrey {
+    text-align: center;
+  }
+
+}
+@media only screen and (max-width: 1419px) {
+
+  .imageCenter{
+    margin: 2rem 0 2rem;
+  }
+}
+.imageCenter{
+  text-align: center;
+}
+
+.harry{
+  width: 10vmin;
+  width: 20vmax;
+}
+
+i{
+  color:#5F5DE7;
+}
+.privacyP{
+display: flex;
+justify-content: flex-end;
+}
+
+@media only screen and (max-width: 767px) {
+  .privacyP{
+    justify-content: center;
+  }
+
+}
+
+ /*carousel-ARROWS-BLACK COLOR CHANGE*/
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}

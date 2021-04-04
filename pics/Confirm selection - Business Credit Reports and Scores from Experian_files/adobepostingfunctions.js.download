@@ -1,0 +1,56 @@
+// AAPost - 05/06/20, 5/27/20
+function PostToAdobe(strPageName, strProductEvent, strProductID, strProductName, strProductTotalRevenue, strProductTotalUnits, strProductTax)
+{
+	var expRegion = "NA"
+	var expCountry = "US";
+	var host = window.location.hostname;
+	var path = window.location.pathname;
+
+	for(var str= path.replace("/","|");str.indexOf("/")>-1;)str=str.replace("/","|");
+	var page_name=expCountry+str;if(1==str.length)page_name=expCountry+"|Home Page";
+	if(host.indexOf("sbcr")>-1){page_name="sbcr|"+page_name;}
+	if(host.indexOf("stg1")>-1||host.indexOf("stage")>-1||host.indexOf("development")>-1)page_name="stg|"+page_name;
+	if(typeof expPageType!=='undefined' && expPageType == "errorPage") {page_name = "404:" + window.location.href};
+	 
+	var page_name = strPageName; // BCR page names - overwrites default.
+	
+	exp_digitalData =[];
+	exp_digitalData={
+				  page:{
+								 pageInfo:{
+											   friendlyPageName: page_name,
+											   },
+								 category:{
+											   contentType:' ',
+											   channel:"omni",
+											   buPartner:"bizreport-Omni",
+											   buSegment:window.expBUSegment,
+											   pageGroup:window.expPageGrp,
+											   pageOwner:"BIS-Small Business",
+											   },
+								 location:{
+											   addressBarFullURL:window.location.href,
+											   domain:window.location.host,
+											   path:window.location.pathname,
+											   urlProtocol:window.location.protocol,
+											   },
+								 },
+				  tech:{
+											   userAgent:navigator.userAgent,
+											   language:navigator.language,
+								 },
+				  product:{
+											   productEvent: strProductEvent, // "purchase" / "prodView"
+											   productID: strProductID, // required
+											   productName: strProductName, // required
+											   productTotalRevenue: strProductTotalRevenue, // purchase only
+											   productTotalUnits: strProductTotalUnits, // purchase only
+											   productTax: strProductTax, // always " "
+								 },
+				  region:expRegion,
+				  country:expCountry,
+	};
+	exp_digitalData.event=[];
+}
+// end AAPost
+

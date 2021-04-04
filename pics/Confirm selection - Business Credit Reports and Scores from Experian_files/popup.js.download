@@ -1,0 +1,47 @@
+	function PopUpGlossary(ref)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no,scrollbars=yes,resizable=yes,height=400,width=400,left=60,top=100";		
+		newWin = window.open(ref,"_blank",strFeatures);
+		newWin.opener = top;
+	}
+	function PopUp(ref)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no,scrollbars=yes,resizable=yes,height=550,width=745,left=15,top=15";
+		newWin = window.open(ref,"_blank",strFeatures);
+		newWin.opener = top;
+	}
+	function PopUpAltLoc(ref)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no,scrollbars=yes,resizable=yes,height=410,width=685,left=55,top=55";
+		newWin = window.open(ref,"_blank",strFeatures);
+		newWin.opener = top;
+	}
+	function PopUpWide(ref)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no,scrollbars=yes,resizable=yes,height=650,width=1100,left=15,top=15"
+		newWin = window.open(ref,"_blank",strFeatures);
+		newWin.opener = top;
+	}
+	function PopUpWidest(ref)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no"
+		strFeatures=strFeatures+",scrollbars=yes,resizable=yes,height=650,width=1100,left=15,top=15"
+		
+		newWin = window.open(ref,"_blank",strFeatures);
+		newWin.opener = top;
+	}
+	function setFocus() 
+	{	var bFound = false;
+		for (f=0; f < document.forms.length; f++)
+		{	for(i=0; i < document.forms[f].length; i++)
+			{	if (document.forms[f][i].type != "hidden")
+      				{	if ((document.forms[f][i].disabled != true) && (document.forms[f][i].type == "text"))
+					{	document.forms[f][i].focus();
+            					var bFound = true;
+        				}
+      				}
+				if (bFound == true) break;
+			}
+ 			if (bFound == true) break;
+		}
+	}

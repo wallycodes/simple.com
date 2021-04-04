@@ -1,0 +1,219 @@
+body	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0 0 0 0;
+	color: #000000;
+	font-size: 9pt;
+	background-color: red;
+}
+
+p	{
+	margin: 9px 0px 0px 0px;
+	font-size : 9pt;
+	line-height: 1.4em;
+}
+
+td	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	line-height: 1.3em;
+}
+
+ul {
+    list-style-type: disc;
+	margin-left: -10px;
+	padding-top: 10px;
+}
+
+li {
+    padding-right: 0px;
+    padding-left: 0px;
+	padding-bottom: 2px;
+}
+
+.f-included {
+	background: url(/images/omni/Confirm2-check-green.gif) no-repeat center;
+}
+
+.f-excluded {
+	background: url(/images/omni/Confirm2-mark-x.gif) no-repeat center;
+}
+
+.f-optional {
+	background: url(/images/omni/Confirm2-optional-mark-blue.gif) no-repeat center;
+}
+
+.odd-row {
+	background-color:#F5F5F5;
+}
+
+.even-row {
+	background-color: #EDEDED;
+}
+
+.switchProducts, a.switchProducts {
+    color: #406EB3;
+	font-size: 14px;
+	font-weight: bold;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.product-feature-column-a {
+	padding-left: 20px;
+	padding-right: 10px;
+	color: #595959;
+	font-size: 17px;
+	height:80px;
+	vertical-align: middle;
+}
+
+.product-feature-column-b {
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.product-column-name {
+	width:22%;
+	text-align: center;
+	font-size: 24px;
+	color:#406EB3;
+	font-weight: bold;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.choose-header
+{
+	color: #0079C2;
+	font-size: 30px;
+	padding-top: 14px;
+	padding-bottom: 28px;
+	font-family: Arial, sans-serif;
+}
+
+.choose-company
+{	color: #333333;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 120%;
+	padding-bottom: 15px;
+	font-family: Arial, sans-serif;
+}
+
+.product-features
+{ 	color: #0079C2;
+	font-size: 32px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	font-family: Arial, sans-serif;	
+}
+
+.snipe
+{  color: #ffffff;
+   font-weight: bold;
+   font-size: 11px;
+   line-height: 240%;
+   white-space: nowrap;
+}
+
+.cost
+{	padding-top: 20px;	
+	color: #595959;
+	font-size: 44px;
+	line-height: 44px;
+	font-family: "Arial Narrow", Arial, sans-serif;	
+}
+
+.pro-cost
+{	padding-top: 17px;	
+	color: #595959;
+	font-size: 35px;
+	line-height: 35px;
+	font-family: "Arial Narrow", Arial, sans-serif;	
+}
+
+.plan-term
+{	padding-top: 3px;	
+	color: #595959;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+}
+
+.cost-feature
+{	color: #595959;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;	
+	line-height: 23px;
+}
+
+.corner-top {
+    border-radius: 12px 12px 0px 0px;
+    border: 0px solid #cecece;
+    padding: 0px; 
+}	
+
+.corner-top-left {
+    border-radius: 12px 0px 0px 0px;
+    border: 0px solid #cecece;
+    padding: 0px; 
+}
+
+.corner-top-right {
+    border-radius: 0px 12px 0px 0px;
+    border: 0px solid #cecece;
+    padding: 0px; 
+}
+
+.corner-bottom {
+    border-radius: 0px 0px 12px 12px;
+    padding: 0px; 
+}
+
+.corner-bottom-left {
+    border-radius: 0px 0px 0px 12px;
+    padding: 20px; 
+}
+
+.corner-bottom-right {
+    border-radius: 0px 0px 12px 0px;
+    padding: 0px; 
+}
+
+
+.contactUs, a.contactUs
+{	color: #5C5C5C;
+}
+
+.searchAgainLink, a.searchAgainLink	{ 
+    color: #0076C0;
+	font-size: 12px;
+	}
+	
+.productTitle {
+    line-height: 110%;
+	font-weight: bold;
+    color: white;
+	font-size: 19px;
+	}
+	
+.SpecialPricing
+{
+	color:red;
+}
+
+.run-advanced
+	{	font-weight: normal;
+		font-size:13px;
+		color: blue;
+	}
+a.run-advanced
+	{   text-decoration: underline;
+		font-weight: normal;
+		color: blue;
+	}
